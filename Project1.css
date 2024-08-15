@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e9eff6;
+    border-bottom: 1px solid #d1d8e0;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+header .user-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .user-menu img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .user-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+    width: 60%;
+    margin: 0 20px;
+}
+
+.main-banner {
+    display: flex;
+    background-color: #eaf4f4;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.main-banner img {
+    height: 150px;
+    margin-left: 20px;
+}
+
+.mini-banners {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mini-banner {
+    width: 30%;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deals-of-the-day {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deals-of-the-day h2 {
+    margin-top: 20px;
+}
+
+.deals {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.deal-item {
+	background-color: #ffffff;
+    width: 18%;
+    text-align: center;
+}
+
+.deal-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.right-sidebar {
+    width: 20%;
+}
+
+.recently-viewed, .suggestions {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recently-viewed img, .suggestions img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .search-bar {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar, .right-sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-banner img {
+        margin: 20px 0 0 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .mini-banners {
+        flex-direction: column;
+    }
+
+    .mini-banner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .deals {
+        flex-direction: column;
+    }
+
+    .deal-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+	.logo{
+		padding-left:40px;
+		height:40px;
+		weight:40px;
+	}
+	
+    header {
+        flex-direction: column;
+    }
+
+    header .search-bar {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar, .right-sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-banner img {
+        margin: 20px 0 0 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .mini-banners {
+        flex-direction: column;
+    }
+
+    .mini-banner {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .deals {
+        flex-direction: column;
+    }
+
+    .deal-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+	
+	.recently-viewed, .suggestions {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.recently-viewed img, .suggestions img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	}
+
+}
